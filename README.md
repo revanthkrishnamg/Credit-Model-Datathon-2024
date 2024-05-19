@@ -5,6 +5,7 @@ This project is about creating a model that helps a financial company called "Pr
 
 ## Datasets
 TO download: kaggle competitions download -c tbs-datathon-home-credit-default-risk
+
 We use different sets of data to build our model, including:
 - **application_train.csv & application_test.csv**: Information about all the loan applications.
 - **bureau.csv**: Information about the borrower's past loans from other banks.
