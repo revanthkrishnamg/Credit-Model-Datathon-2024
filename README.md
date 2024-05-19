@@ -1,46 +1,56 @@
-# Credit Scoring Model
+# Credit Scoring Model Project
 
 ## Overview
-This project involves developing a credit scoring model for "Prêt à dépenser," a financial company that extends consumer credit to individuals, particularly those with minimal or no loan history. The primary goal of the model is to predict the probability of loan repayment and classify each application as either approved or refused credit.
+This project is about creating a model that helps a financial company called "Prêt à dépenser" decide whether to give someone a loan. The company focuses on people who haven't borrowed much money before. The main goal is to predict if a person will pay back their loan on time.
 
 ## Datasets
-The model utilizes various data sources including:
-- **application_train.csv & application_test.csv**: Static data for all loan applications.
-- **bureau.csv**: Data on client's previous credits from other financial institutions.
-- **bureau_balance.csv**: Monthly balances of previous credits.
-- **POS_CASH_balance.csv**: Monthly balance snapshots of previous POS and cash loans.
-- **credit_card_balance.csv**: Monthly balance snapshots of previous credit card loans.
-- **previous_application.csv**: Data on all previous applications for loans.
-- **installments_payments.csv**: Repayment history for previously disbursed credits.
+We use different sets of data to build our model, including:
+- **application_train.csv & application_test.csv**: Information about all the loan applications.
+- **bureau.csv**: Information about the borrower's past loans from other banks.
+- **bureau_balance.csv**: Monthly details of past loans.
+- **POS_CASH_balance.csv**: Monthly details about POS (point of sale) and cash loans.
+- **credit_card_balance.csv**: Monthly details about credit card payments.
+- **previous_application.csv**: Information on all past loan applications to the same company.
+- **installments_payments.csv**: Details on how past loans were repaid.
 
-## Methodology
-The approach to building the model involved several structured steps:
+## Steps in the Project
+We built the model in several clear steps:
 
-1. **Data Understanding and Import**
-2. **Data Preprocessing and Aggregation**
-3. **Feature Engineering**
-4. **Imputation and Encoding**
-5. **Feature Selection**
-6. **Model Training and Evaluation**
-7. **Model Selection and Prediction**
-8. **Feature Importance Analysis**
+1. **Understanding and Loading Data**
+2. **Preparing and Combining Data**
+3. **Creating New Features**
+4. **Filling Missing Values and Turning Categories into Numbers**
+5. **Choosing the Most Important Features**
+6. **Training and Picking the Best Model**
+7. **Making Predictions with the Model**
+8. **Analyzing Which Features are Most Important**
 
-Key machine learning techniques used include:
-- Aggregation of numeric and categorical features.
-- Advanced feature engineering to create insightful attributes.
-- Implementation of LightGBM for feature selection.
-- Training multiple models and selecting the best performer using metrics like F1 score and AUC.
-- Handling class imbalance with SMOTE.
-- Visualization of feature importance and ROC curves.
+We used different techniques to make our model smart, such as:
+- Combining information from different sources.
+- Creating new features that help predict if a loan will be paid back.
+- Using a technique called LightGBM to find out which features are most important.
+- Comparing several models to find the best one.
+- Balancing our data so that the model treats all scenarios fairly.
+- Showing which features help make decisions about loans.
+
+## Data Merging
+### Initial Structure of the Data
+![image1](https://github.com/revanthkrishnamg/Credit-Model-Datathon-2024/assets/149286080/5ab175cd-84d8-4ac9-a89e-22b6974daa55)
+
+### Merging bureau_balance with bureau
+![image2](https://github.com/revanthkrishnamg/Credit-Model-Datathon-2024/assets/149286080/2c2c80b7-9b0e-4a15-8d5c-35b8125b2970)
+
+### Aggregation and Merging
+![image_3](https://github.com/revanthkrishnamg/Credit-Model-Datathon-2024/assets/149286080/b6546529-7223-4617-a56b-83f4bd708da3)
+
+### Final Merged Data Structure
+![image_4](https://github.com/revanthkrishnamg/Credit-Model-Datathon-2024/assets/149286080/25daaba3-e35a-4738-b481-3768c4b5ae16)
 
 ## Results
-The project successfully developed a machine learning pipeline that predicts loan repayment probabilities with high accuracy. Feature importance analysis revealed that certain demographic and loan-related features significantly impact the likelihood of loan repayment.
+We built a model that can predict quite accurately whether someone will pay back their loan. We also found out which details about a person or their loan matter most in deciding if they will pay back on time.
 
-## Usage
-- The final model can be used to make predictions on new loan applications, helping the company decide whether to approve or refuse a credit application.
-- The methodology and findings can also be leveraged to refine lending strategies and minimize credit risk.
-
-## Tools and Libraries Used
+## Tools and Libraries
+To do this project, we used:
 - Pandas
 - NumPy
 - Scikit-learn
@@ -48,8 +58,5 @@ The project successfully developed a machine learning pipeline that predicts loa
 - Matplotlib & Seaborn
 - Imbalanced-learn
 
-## How to Run
-Ensure you have Python installed along with the necessary libraries. Clone the repository, navigate to the project directory, and run the Jupyter notebook to replicate the analysis or make new predictions.
-
 ## Conclusion
-This project exemplifies the power of machine learning in financial decision-making and risk assessment. By carefully engineering features and selecting the right model, we can significantly enhance our ability to predict outcomes in the credit industry.
+This project shows how machine learning can help make important decisions like giving out loans. By carefully choosing and preparing features, and selecting the right model, we can greatly improve how well we predict outcomes in lending.
