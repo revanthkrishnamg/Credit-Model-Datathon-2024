@@ -1,4 +1,4 @@
-# Credit Scoring Model Project
+# Credit Scoring Model - TBS Datathon 2024
 
 ## Overview
 This project is about creating a model that helps a financial company called "Prêt à dépenser" decide whether to give someone a loan. The company focuses on people who haven't borrowed much money before. The main goal is to predict if a person will pay back their loan on time.
