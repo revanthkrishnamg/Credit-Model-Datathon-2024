@@ -63,11 +63,11 @@ To do this project, we used:
 This project shows how machine learning can help make important decisions like giving out loans. By carefully choosing and preparing features, and selecting the right model, we can greatly improve how well we predict outcomes in lending.
 
 ## Team Members
-Diana 
-Vivek 
-Chayanika
-Aman
-Cathal
-Revanth
+- Diana 
+- Vivek 
+- Chayanika
+- Aman
+- Cathal
+- Revanth
 
 
